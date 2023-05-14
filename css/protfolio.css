@@ -422,6 +422,7 @@ header .links-up .mega-menu .links li a i{
 .landing .intro-text .btn:hover {
   background-color: transparent;
   border: 2px solid var(--main-color-alt);
+  margin-left: 8px;
 }
 .landing .intro-text .social {
   margin-top: 44px;
