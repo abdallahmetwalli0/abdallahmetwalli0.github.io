@@ -1,0 +1,207 @@
+/* Start Global Rulws */
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:root{
+  --main-color: #2196f3;
+  --main-color-alt: #1787e0;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+  color: #ddd;
+}
+a{
+  text-decoration: none;
+  color: #ddd;
+}
+i{
+  margin-right: 10px;
+  transition: 0.3s;
+}
+i:hover{
+  transform: rotate(360deg);
+}
+li{
+  margin-bottom: 20px;
+}
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.container{
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px){
+  .container{
+    width: 760px;
+  }
+}
+@media (min-width: 992px){
+  .container{
+    width: 970px;
+  }
+}
+@media (min-width: 1200px){
+  .container{
+    width: 1170px;
+  }
+}
+h2,
+h3{
+  text-align: center;
+  color: var(--main-color);
+  text-transform: uppercase;
+}
+h3{
+  position: relative;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.landing  h3::before{
+  content: "";
+  position: absolute;
+  background-color: var(--main-color-alt);
+  height: 2px;
+  width: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -12px;
+}
+.landing h3::after{
+  content: "";
+  position: absolute;
+  border:1px solid var(--main-color) ;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -18px;
+}
+/* End Global Rulws */
+/* Start Landing */
+.landing{
+  background-color: black;
+  background-image: url(../imgs/wallpaperbetter\ \(1\).jpg);
+  height: 100vh;
+  width: 100%;
+  background-size:cover;
+}
+.landing .container{
+  background-color: #0A1C45;
+  position: relative;
+  border-radius: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 0 18px 4px #000219;
+}
+@media (max-width: 843px){
+  .landing .container{
+    transform: none;
+    top: 12px;
+    bottom: 12px;
+  }
+}
+.landing .content{
+  padding: 40px 10px;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 843px){
+  .landing .content{
+   display: block;
+  }
+}
+.landing .content .image{
+  flex-basis: 50%;
+  position: relative;
+}
+.landing .content .image img{
+  width: 175px;
+  border-radius: 42%;
+  border: 4px solid var(--main-color);
+  padding: 5px;
+  transition: 0.3s;
+}
+.landing .content .image img:hover{
+  background-color: #2196f3;
+}
+.landing .content .image h2{
+  color: var(--main-color);
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: -60px;
+  text-transform:capitalize;
+}
+.landing .content .image p{
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: -20px;
+  margin-left: -60px;
+}
+.landing .content .image h3{
+  margin-left: -60px;
+}
+@media (max-width: 843px){
+  .landing .content .image img,
+  .landing .content .image h2,
+  .landing .content .image p,
+  .landing .content .image h3{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+.landing .content .image div:first-child li:first-child a:last-child > i{
+  margin-left: 10px;
+}
+.landing .content .content-image li{
+  font-size: 18px;
+}
+.landing .content .content-image div .star ul{
+  display: block;
+  margin-bottom: 10px;
+}
+.landing .content .content-image div .star ul a span{
+  margin-left: 10px;
+  color: var(--main-color-alt);
+}
+.landing .content .content-image div .star ul a span i{
+  margin-right: 5px;
+}
+.landing .content .summary{
+  flex-basis: 30%;
+}
+.landing .content .summary div:first-child p{
+  letter-spacing: 1px;
+  text-align: justify;
+}
+.landing .content .summary div h4{
+  color: var(--main-color-alt);
+}
+.landing .content .summary div:last-of-type p{
+  margin-bottom: 5px;
+  margin-top: -12px;
+}
+.landing .content .summary div:last-of-type a{
+  color: var(--main-color-alt);
+  font-size: 14px;
+  transition: 0.3s;
+}
+.landing .content .summary div:last-of-type a:hover{
+  color: var(--main-color);
+  padding-left: 5px;
+}
+/* End Landing */
